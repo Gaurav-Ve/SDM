@@ -13,10 +13,10 @@ app.post("/contact", async (req, res) => {
     const { name, email, number, service, msg } = req.body;
 
     const saved = await Detail.create({
-      name,
-      email,
-      number,
-      service,
+      name:name,
+      email:email,
+      number:number,
+      service:service,
       message: msg,
     });
 
